@@ -1,0 +1,22 @@
+1. create package.json - npm init
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js",
+        "start-server": "node app.js"
+    },
+
+    start is a reserved work so we can execute it as npm start
+    where as start-server is not a reserve keywork so we need to execite it as npm run start-server 
+2. npm install nodemon --save-dev
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+    nodemon is a 3rd party lib used for restart of server when we make changes and save.
+    --save-dev tell that it is a dev only dependency and updates package.json with a devdependency entry
+    -g can be used if we want to install it globally
+    NOTE : ^ infront of package version in package.json symbolises if npm install is run then install the package dependencies and update them to latest version if exists.
+
+3. npm install --save express
+  "dependencies": {
+    "express": "^4.17.1"
+  }
